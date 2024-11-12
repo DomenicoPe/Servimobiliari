@@ -18,11 +18,13 @@ body {
     color: #333;
 }
 
-/* Opzioni per contrasto di testo */
-header, footer, main {
-    background-color: rgba(255, 255, 255, 0.9); /* Sfondo semi-trasparente per leggibilità */
-    border-radius: 10px;
-    padding: 1rem;
+/* Header e testo iniziale */
+header {
+    background-color: rgba(0, 102, 204, 0.8); /* Aggiunto sfondo blu semi-trasparente */
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 header h1 {
@@ -34,6 +36,13 @@ header h1 {
 header p {
     font-size: 1.1rem;
     color: #e0e4e8;
+}
+
+/* Opzioni per contrasto di testo */
+header, footer, main {
+    background-color: rgba(255, 255, 255, 0.9); /* Sfondo semi-trasparente per leggibilità */
+    border-radius: 10px;
+    padding: 1rem;
 }
 
 /* Stili principali */
