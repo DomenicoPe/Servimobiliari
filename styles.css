@@ -31,11 +31,12 @@ header h1 {
     font-size: 2.5rem;
     margin-bottom: 0.5rem;
     font-weight: 700;
+    color: #0066cc;
 }
 
 header p {
     font-size: 1.1rem;
-    color: #e0e4e8;
+    color: #0066cc;
 }
 
 /* Opzioni per contrasto di testo */
