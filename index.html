@@ -1,44 +1,370 @@
 <!DOCTYPE html>
 <html lang="it">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SERVIZI IMMOBILIARI S.R.L.</title>
+    <meta name="description"
+        content="SERVIZI IMMOBILIARI S.R.L. - Locazione di immobili residenziali e commerciali, interventi edili e gestione del patrimonio immobiliare a Torremaggiore (FG).">
+    <meta name="keywords"
+        content="Servizi Immobiliari, Locazioni Torremaggiore, Lavori edili Foggia, Manutenzioni edili, Gestione immobili">
+    <meta name="theme-color" content="#ffffff">
+    <title>SERVIZI IMMOBILIARI S.R.L. | Locazioni e Lavori Edili</title>
+
+    <!-- Google Fonts: Inter (SIL Open Font License 1.1 - 100% Free & Open Source) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
 
-    <header>
-        <h1>SERVIZI IMMOBILIARI S.R.L.</h1>
-        <p>Benvenuti sul sito ufficiale di SERVIZI IMMOBILIARI S.R.L.</p>
+<body>
+    <!-- Sfondo con ambient mesh blur stile Apple/Revolut -->
+    <div class="bg-layer">
+        <div class="bg-image"></div>
+        <div class="bg-gradient-mesh"></div>
+    </div>
+
+    <!-- Floating Glass Header -->
+    <header class="glass-header">
+        <nav class="nav-container">
+            <a href="#" class="brand-logo">
+                <span class="logo-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                        <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                    </svg>
+                </span>
+                <span class="logo-text">SERVIZI IMMOBILIARI</span>
+            </a>
+
+            <div class="nav-menu">
+                <a href="#attivita" class="nav-link">Attività</a>
+                <a href="#societa" class="nav-link">Azienda</a>
+                <a href="#contatti" class="nav-link">Contatti</a>
+            </div>
+
+            <div class="nav-cta">
+                <a href="mailto:servimobiliari22@pec.it" class="btn btn-sm btn-primary">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                        <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                    <span>Scrivici PEC</span>
+                </a>
+            </div>
+        </nav>
     </header>
 
-    <main>
+    <main class="main-wrapper">
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="pill-badge">
+                <span class="badge-dot"></span>
+                <span>Società di Servizi e Gestione Patrimoniale</span>
+            </div>
 
-        <section id="bacheca">
-            <h2>Bacheca Notizie</h2>
-            <ul>
-                <li><strong>Locazione di immobili e lavori edili</strong></li>
-            </ul>
+            <h1 class="hero-title">
+                Valorizzazione, locazione e cura del patrimonio immobiliare.
+            </h1>
+
+            <p class="hero-subtitle">
+                SERVIZI IMMOBILIARI S.R.L. unisce competenza operativa, affidabilità contrattuale e qualità esecutiva nella gestione di locazioni e opere edili.
+            </p>
+
+            <div class="hero-actions">
+                <a href="#contatti" class="btn btn-lg btn-primary">
+                    <span>Contattaci Subito</span>
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                </a>
+                <a href="#attivita" class="btn btn-lg btn-glass">
+                    <span>Scopri i Servizi</span>
+                </a>
+            </div>
+
+            <!-- Quick Metrics Cards -->
+            <div class="metrics-grid">
+                <div class="metric-card glass-card">
+                    <div class="metric-icon">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                        </svg>
+                    </div>
+                    <div class="metric-info">
+                        <span class="metric-val">Locazioni</span>
+                        <span class="metric-desc">Residenziali & commerciali</span>
+                    </div>
+                </div>
+
+                <div class="metric-card glass-card">
+                    <div class="metric-icon">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+                        </svg>
+                    </div>
+                    <div class="metric-info">
+                        <span class="metric-val">Opere Edili</span>
+                        <span class="metric-desc">Manutenzioni & ristrutturazioni</span>
+                    </div>
+                </div>
+
+                <div class="metric-card glass-card">
+                    <div class="metric-icon">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                        </svg>
+                    </div>
+                    <div class="metric-info">
+                        <span class="metric-val">Certificata</span>
+                        <span class="metric-desc">Trasparenza e conformità</span>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section id="contatti">
-            <h2>Contatti</h2>
-            <p><strong>Indirizzo:</strong> TORREMAGGIORE (FG) <br> VIA DON CARLO GNOCCHI 32 <br> CAP 71017</p>
-            <p><strong>Email:</strong> <a href="mailto:servimobiliari22@pec.it">servimobiliari22@pec.it</a></p>
+        <!-- Activities / Bento Grid Section -->
+        <section id="attivita" class="content-section">
+            <div class="section-header">
+                <span class="section-tag">Aree di Attività</span>
+                <h2 class="section-title">Soluzioni complete per il tuo immobile</h2>
+                <p class="section-desc">Ci prendiamo cura del patrimonio immobiliare con un approccio moderno e integrato.</p>
+            </div>
+
+            <div class="bento-grid">
+                <!-- Bento Card 1: Locazione -->
+                <div class="bento-card bento-span-2 glass-card">
+                    <div class="bento-icon-wrapper">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                            <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                        </svg>
+                    </div>
+                    <div class="bento-content">
+                        <h3>Locazione e Gestione Immobili</h3>
+                        <p>
+                            Gestione strategica delle locazioni a destinazione residenziale e commerciale. Assicuriamo una conduzione trasparente dei contratti, selezione accurata e continuo monitoraggio per garantire serenità a proprietà e conduttori.
+                        </p>
+                        <div class="bento-pills">
+                            <span class="feature-pill">Gestione Contrattuale</span>
+                            <span class="feature-pill">Locazioni Residenziali</span>
+                            <span class="feature-pill">Unità Commerciali</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bento Card 2: Lavori Edili -->
+                <div class="bento-card glass-card">
+                    <div class="bento-icon-wrapper">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                            <polyline points="2 17 12 22 22 17"></polyline>
+                            <polyline points="2 12 12 17 22 12"></polyline>
+                        </svg>
+                    </div>
+                    <div class="bento-content">
+                        <h3>Lavori Edili & Ristrutturazioni</h3>
+                        <p>
+                            Esecuzione di opere edili, ristrutturazioni, rifacimenti e manutenzioni per il rinnovamento e la valorizzazione estetica e funzionale degli edifici.
+                        </p>
+                        <div class="bento-pills">
+                            <span class="feature-pill">Manutenzioni</span>
+                            <span class="feature-pill">Riqualificazioni</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bento Card 3: Valorizzazione Patrimoniale -->
+                <div class="bento-card glass-card">
+                    <div class="bento-icon-wrapper">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <path d="m16 10-4 4-2-2"></path>
+                        </svg>
+                    </div>
+                    <div class="bento-content">
+                        <h3>Efficienza & Controllo Qualità</h3>
+                        <p>
+                            Monitoraggio continuo dello stato conservativo degli immobili, prevenzione dei rischi di degrado e ottimizzazione del valore patrimoniale nel tempo.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Bento Card 4: Supporto Normativo -->
+                <div class="bento-card bento-span-2 glass-card">
+                    <div class="bento-icon-wrapper">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <polyline points="14 2 14 8 20 8"></polyline>
+                            <line x1="16" y1="13" x2="8" y2="13"></line>
+                            <line x1="16" y1="17" x2="8" y2="17"></line>
+                        </svg>
+                    </div>
+                    <div class="bento-content">
+                        <h3>Affidabilità e Conformità Normativa</h3>
+                        <p>
+                            Operiamo con il massimo rispetto della legislazione vigente, garantendo precisione amministrativa, regolarità urbanistica e trasparenza verso clienti e partner.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section id="informazioni">
-            <h2>Informazioni sull'Azienda</h2>
-            <p>La nostra azienda offre servizi di locazione immobiliari e lavori edili per i clienti.</p>
-        </section>
+        <!-- Company & Contact Showcase (Revolut Style Card) -->
+        <section id="contatti" class="content-section">
+            <div class="section-header">
+                <span class="section-tag">Contatti & Sede</span>
+                <h2 class="section-title">Canali Ufficiali</h2>
+                <p class="section-desc">Informazioni legali e recapiti per richieste e comunicazioni istituzionali.</p>
+            </div>
 
+            <div class="contact-card glass-card">
+                <div class="contact-layout">
+                    <!-- Left: Details -->
+                    <div class="contact-details">
+                        <div class="company-badge-row">
+                            <span class="company-name">SERVIZI IMMOBILIARI S.R.L.</span>
+                            <span class="vat-badge">P.IVA 04410560710</span>
+                        </div>
+
+                        <p class="company-intro">
+                            Siamo a disposizione per informazioni su contratti di locazione, disponibilità di immobili e preventivi per opere edili e manutentive.
+                        </p>
+
+                        <div class="info-list">
+                            <div class="info-item">
+                                <div class="info-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                        <circle cx="12" cy="10" r="3"></circle>
+                                    </svg>
+                                </div>
+                                <div class="info-text">
+                                    <span class="label">Sede Legale</span>
+                                    <span class="val">Via Don Carlo Gnocchi 32 — 71017 Torremaggiore (FG)</span>
+                                </div>
+                                <button type="button" class="btn-copy" onclick="copyText('Via Don Carlo Gnocchi 32, 71017 Torremaggiore (FG)', this)" title="Copia indirizzo">
+                                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                                        <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <div class="info-item">
+                                <div class="info-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                        <polyline points="22,6 12,13 2,6"></polyline>
+                                    </svg>
+                                </div>
+                                <div class="info-text">
+                                    <span class="label">Posta Elettronica Certificata (PEC)</span>
+                                    <a href="mailto:servimobiliari22@pec.it" class="val val-link">servimobiliari22@pec.it</a>
+                                </div>
+                                <button type="button" class="btn-copy" onclick="copyText('servimobiliari22@pec.it', this)" title="Copia PEC">
+                                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                                        <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <div class="info-item">
+                                <div class="info-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                                        <path d="M7 15h0M2 9.5h20"></path>
+                                    </svg>
+                                </div>
+                                <div class="info-text">
+                                    <span class="label">Partita IVA & Codice Fiscale</span>
+                                    <span class="val">04410560710</span>
+                                </div>
+                                <button type="button" class="btn-copy" onclick="copyText('04410560710', this)" title="Copia Partita IVA">
+                                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                                        <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Direct Contact CTA Box -->
+                    <div class="contact-action-box glass-card-nested">
+                        <div class="action-box-content">
+                            <div class="action-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                                </svg>
+                            </div>
+                            <h3>Invia una comunicazione</h3>
+                            <p>Per richieste commerciali, segnalazioni o invio di documentazione ufficiale via PEC.</p>
+                            <a href="mailto:servimobiliari22@pec.it" class="btn btn-block btn-primary">
+                                <span>Apri Client Email / PEC</span>
+                            </a>
+                            <span class="action-subtext">Risposta celere tramite casella certificata</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
-    <footer>
-        <p>&copy; 2023 SERVIZI IMMOBILIARI S.R.L. Tutti i diritti riservati.</p>
-        <p>P. IVA 04410560710</p>
+    <!-- Clean Apple-style Minimal Footer -->
+    <footer class="glass-footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <span class="logo-text">SERVIZI IMMOBILIARI S.R.L.</span>
+                    <p class="footer-tagline">Locazione di immobili e lavori edili</p>
+                </div>
+                <div class="footer-nav">
+                    <a href="#attivita">Attività</a>
+                    <a href="#contatti">Recapiti</a>
+                    <a href="mailto:servimobiliari22@pec.it">Contatta via PEC</a>
+                </div>
+            </div>
+
+            <div class="footer-divider"></div>
+
+            <div class="footer-bottom">
+                <p>&copy; <span id="year">2026</span> SERVIZI IMMOBILIARI S.R.L. — Tutti i diritti riservati.</p>
+                <p class="footer-legal">P.IVA 04410560710 · Sede Legale: Via Don Carlo Gnocchi 32, 71017 Torremaggiore (FG)</p>
+            </div>
+        </div>
     </footer>
 
+    <!-- Toast Notification for Copy -->
+    <div id="toast" class="toast">Testo copiato negli appunti!</div>
+
+    <!-- Minimal Script (Vanilla JS - Zero Dependencies) -->
+    <script>
+        // Update Year
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Copy Helper
+        function copyText(text, btnElement) {
+            navigator.clipboard.writeText(text).then(function() {
+                const toast = document.getElementById('toast');
+                toast.classList.add('show');
+                setTimeout(() => toast.classList.remove('show'), 2500);
+
+                if (btnElement) {
+                    btnElement.classList.add('copied');
+                    setTimeout(() => btnElement.classList.remove('copied'), 1500);
+                }
+            }).catch(function(err) {
+                console.error('Errore copia', err);
+            });
+        }
+    </script>
 </body>
+
 </html>
