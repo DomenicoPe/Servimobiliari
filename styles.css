@@ -806,12 +806,52 @@ body {
 
 @media (max-width: 640px) {
     .glass-header {
-        top: 0.75rem;
-        padding: 0 0.75rem;
+        top: 0.5rem;
+        padding: 0 0.5rem;
+    }
+
+    .nav-container {
+        padding: 0.45rem 0.85rem;
     }
 
     .nav-menu {
         display: none;
+    }
+
+    /* Rimpicciolimento marcato ed elegante su smartphone durante lo scroll */
+    .glass-header.scrolled {
+        top: 0.35rem;
+    }
+
+    .glass-header.scrolled .nav-container {
+        padding: 0.25rem 0.65rem;
+        border-radius: var(--radius-pill);
+    }
+
+    .glass-header.scrolled .logo-icon {
+        width: 24px;
+        height: 24px;
+        border-radius: 6px;
+    }
+
+    .glass-header.scrolled .logo-icon svg {
+        width: 14px;
+        height: 14px;
+    }
+
+    .glass-header.scrolled .logo-text {
+        font-size: 0.74rem;
+        letter-spacing: -0.02em;
+    }
+
+    .glass-header.scrolled .btn-sm {
+        padding: 0.28rem 0.65rem;
+        font-size: 0.72rem;
+    }
+
+    .glass-header.scrolled .btn-sm svg {
+        width: 12px;
+        height: 12px;
     }
 
     .hero-section {

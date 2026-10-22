@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="buildingGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0066f5"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+  </defs>
+  <!-- Background squircle -->
+  <rect width="64" height="64" rx="16" fill="url(#buildingGrad)"/>
+  
+  <!-- Stylized modern building silhouette -->
+  <!-- Left lower building -->
+  <rect x="12" y="24" width="16" height="30" rx="3" fill="#ffffff" opacity="0.9"/>
+  <!-- Windows left -->
+  <rect x="16" y="29" width="3" height="4" rx="1" fill="#0066f5"/>
+  <rect x="21" y="29" width="3" height="4" rx="1" fill="#0066f5"/>
+  <rect x="16" y="37" width="3" height="4" rx="1" fill="#0066f5"/>
+  <rect x="21" y="37" width="3" height="4" rx="1" fill="#0066f5"/>
+  <rect x="16" y="45" width="3" height="4" rx="1" fill="#0066f5"/>
+  <rect x="21" y="45" width="3" height="4" rx="1" fill="#0066f5"/>
+
+  <!-- Center tall skyscraper -->
+  <rect x="30" y="12" width="22" height="42" rx="4" fill="#ffffff"/>
+  <!-- Windows center -->
+  <rect x="35" y="18" width="4" height="4.5" rx="1" fill="#0284c7"/>
+  <rect x="43" y="18" width="4" height="4.5" rx="1" fill="#0284c7"/>
+  <rect x="35" y="26" width="4" height="4.5" rx="1" fill="#0284c7"/>
+  <rect x="43" y="26" width="4" height="4.5" rx="1" fill="#0284c7"/>
+  <rect x="35" y="34" width="4" height="4.5" rx="1" fill="#0284c7"/>
+  <rect x="43" y="34" width="4" height="4.5" rx="1" fill="#0284c7"/>
+  <rect x="35" y="42" width="4" height="4.5" rx="1" fill="#0284c7"/>
+  <rect x="43" y="42" width="4" height="4.5" rx="1" fill="#0284c7"/>
+</svg>
