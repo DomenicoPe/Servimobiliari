@@ -346,6 +346,16 @@
         // Update Year
         document.getElementById('year').textContent = new Date().getFullYear();
 
+        // Dynamic Header Shrink on Scroll (Apple-style)
+        const header = document.querySelector('.glass-header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 40) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        }, { passive: true });
+
         // Copy Helper
         function copyText(text, btnElement) {
             navigator.clipboard.writeText(text).then(function() {

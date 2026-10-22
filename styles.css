@@ -110,7 +110,7 @@ body {
 }
 
 /* ==========================================================================
-   Header / Navbar (Floating Island)
+   Header / Navbar (Floating Island with Apple-Style Scroll Shrink)
    ========================================================================== */
 .glass-header {
     position: sticky;
@@ -118,6 +118,7 @@ body {
     z-index: 100;
     padding: 0 1.25rem;
     margin-bottom: 2rem;
+    transition: top 0.35s cubic-bezier(0.16, 1, 0.3, 1), margin-bottom 0.35s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .nav-container {
@@ -133,6 +134,45 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.95);
     border-radius: var(--radius-pill);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15), 0 0 0 1px rgba(255, 255, 255, 0.9) inset;
+    transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Scrolled / Shrunk State */
+.glass-header.scrolled {
+    top: 0.75rem;
+}
+
+.glass-header.scrolled .nav-container {
+    max-width: 900px;
+    padding: 0.38rem 1.15rem;
+    background: rgba(255, 255, 255, 0.92);
+    backdrop-filter: blur(25px) saturate(200%);
+    -webkit-backdrop-filter: blur(25px) saturate(200%);
+    box-shadow: 0 14px 35px rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(255, 255, 255, 0.95) inset;
+}
+
+.glass-header.scrolled .logo-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 8px;
+}
+
+.glass-header.scrolled .logo-icon svg {
+    width: 18px;
+    height: 18px;
+}
+
+.glass-header.scrolled .logo-text {
+    font-size: 0.88rem;
+}
+
+.glass-header.scrolled .nav-link {
+    font-size: 0.86rem;
+}
+
+.glass-header.scrolled .btn-sm {
+    padding: 0.4rem 0.85rem;
+    font-size: 0.8rem;
 }
 
 /* Static Brand (No link jumping) */
