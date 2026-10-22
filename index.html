@@ -399,7 +399,21 @@
             }
         }, { passive: true });
 
-        // Copy Helper
+        // Smooth Scroll without polluting Browser History
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                const targetId = this.getAttribute('href');
+                if (targetId && targetId !== '#') {
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        e.preventDefault();
+                        targetElement.scrollIntoView({ behavior: 'smooth' });
+                        // Update URL hash without adding an entry in history stack
+                        history.replaceState(null, '', targetId);
+                    }
+                }
+            });
+        });
         function copyText(text, btnElement) {
             navigator.clipboard.writeText(text).then(function() {
                 const toast = document.getElementById('toast');
